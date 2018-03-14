@@ -26,7 +26,7 @@ public struct BlankVideoBufferTask: BufferTask {
     
     public func generateBufferFrame(done: @escaping (CVPixelBuffer?) -> Void) {
         VideoSingleFrameGenerator.createSingleFrame(customizations: { (context, frame) in
-            context.setFillColor(UIColor.white.cgColor)
+            context.setFillColor(UIColor.blue.cgColor)
             print("fillin")
             context.fill(frame)
         }) { (buffer) in

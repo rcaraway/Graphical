@@ -32,6 +32,7 @@ class MyViewController : UIViewController {
         bufferTask.generateBufferFrame { (buffer) in
             print(buffer)
             self.setupImageView(buffer: buffer!)
+            
         }
         
     }
@@ -47,9 +48,6 @@ class MyViewController : UIViewController {
             imageView.image = image
             view.addSubview(imageView)
         }
-        
-        
-        
     }
     
 }
