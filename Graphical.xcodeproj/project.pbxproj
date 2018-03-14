@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353B15F72059A77C00A915D8 /* VideoSingleFrameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353B15F62059A77C00A915D8 /* VideoSingleFrameGenerator.swift */; };
+		355F5831205975F80034EACE /* BlankVideoBufferTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355F5830205975F80034EACE /* BlankVideoBufferTask.swift */; };
+		A931DC7A2048CD5F00FEC121 /* UIImage+IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931DC792048CD5F00FEC121 /* UIImage+IO.swift */; };
+		A931DC7C2048CF3600FEC121 /* String+Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931DC7B2048CF3600FEC121 /* String+Files.swift */; };
+		A931DC7E2048D14A00FEC121 /* VideoCreationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931DC7D2048D14A00FEC121 /* VideoCreationTask.swift */; };
 		A975E5B6204893E900F18024 /* Graphical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A975E5AC204893E900F18024 /* Graphical.framework */; };
 		A975E5BB204893E900F18024 /* GraphicalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975E5BA204893E900F18024 /* GraphicalTests.swift */; };
 		A975E5BD204893E900F18024 /* Graphical.h in Headers */ = {isa = PBXBuildFile; fileRef = A975E5AF204893E900F18024 /* Graphical.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A975E5C82048943200F18024 /* CALayer+Rendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975E5C72048943200F18024 /* CALayer+Rendering.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		353B15F62059A77C00A915D8 /* VideoSingleFrameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSingleFrameGenerator.swift; sourceTree = "<group>"; };
+		355F582F2058E0D00034EACE /* VideoCreation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = VideoCreation.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		355F5830205975F80034EACE /* BlankVideoBufferTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankVideoBufferTask.swift; sourceTree = "<group>"; };
+		A931DC782048C70B00FEC121 /* ImageSource.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ImageSource.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A931DC792048CD5F00FEC121 /* UIImage+IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+IO.swift"; sourceTree = "<group>"; };
+		A931DC7B2048CF3600FEC121 /* String+Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Files.swift"; sourceTree = "<group>"; };
+		A931DC7D2048D14A00FEC121 /* VideoCreationTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCreationTask.swift; sourceTree = "<group>"; };
 		A975E5AC204893E900F18024 /* Graphical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Graphical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A975E5AF204893E900F18024 /* Graphical.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graphical.h; sourceTree = "<group>"; };
 		A975E5B0204893E900F18024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A975E5B5204893E900F18024 /* GraphicalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphicalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A975E5BA204893E900F18024 /* GraphicalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicalTests.swift; sourceTree = "<group>"; };
 		A975E5BC204893E900F18024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A975E5C72048943200F18024 /* CALayer+Rendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Rendering.swift"; sourceTree = "<group>"; };
+		A98A9B3D2048B524002D3DB3 /* CALayerToImage.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CALayerToImage.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +65,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		353B15F82059A79400A915D8 /* Video Frame Creation */ = {
+			isa = PBXGroup;
+			children = (
+				355F5830205975F80034EACE /* BlankVideoBufferTask.swift */,
+				353B15F62059A77C00A915D8 /* VideoSingleFrameGenerator.swift */,
+			);
+			path = "Video Frame Creation";
+			sourceTree = "<group>";
+		};
+		35F43A1520583A0A00168FA6 /* VideoCreation */ = {
+			isa = PBXGroup;
+			children = (
+				353B15F82059A79400A915D8 /* Video Frame Creation */,
+				35F43A1620583A1500168FA6 /* Writing VIdeo */,
+				A931DC7D2048D14A00FEC121 /* VideoCreationTask.swift */,
+			);
+			path = VideoCreation;
+			sourceTree = "<group>";
+		};
+		35F43A1620583A1500168FA6 /* Writing VIdeo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Writing VIdeo";
+			sourceTree = "<group>";
+		};
 		A975E5A2204893E900F18024 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +112,9 @@
 		A975E5AE204893E900F18024 /* Graphical */ = {
 			isa = PBXGroup;
 			children = (
+				35F43A1520583A0A00168FA6 /* VideoCreation */,
+				A98A9B3C2048B3DE002D3DB3 /* Playgrounds */,
+				A975E5C62048941600F18024 /* Extensions */,
 				A975E5AF204893E900F18024 /* Graphical.h */,
 				A975E5B0204893E900F18024 /* Info.plist */,
 			);
@@ -84,6 +128,26 @@
 				A975E5BC204893E900F18024 /* Info.plist */,
 			);
 			path = GraphicalTests;
+			sourceTree = "<group>";
+		};
+		A975E5C62048941600F18024 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A975E5C72048943200F18024 /* CALayer+Rendering.swift */,
+				A931DC792048CD5F00FEC121 /* UIImage+IO.swift */,
+				A931DC7B2048CF3600FEC121 /* String+Files.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A98A9B3C2048B3DE002D3DB3 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				355F582F2058E0D00034EACE /* VideoCreation.playground */,
+				A931DC782048C70B00FEC121 /* ImageSource.playground */,
+				A98A9B3D2048B524002D3DB3 /* CALayerToImage.playground */,
+			);
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +212,7 @@
 				TargetAttributes = {
 					A975E5AB204893E900F18024 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					A975E5B4204893E900F18024 = {
@@ -196,6 +261,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A975E5C82048943200F18024 /* CALayer+Rendering.swift in Sources */,
+				A931DC7E2048D14A00FEC121 /* VideoCreationTask.swift in Sources */,
+				355F5831205975F80034EACE /* BlankVideoBufferTask.swift in Sources */,
+				353B15F72059A77C00A915D8 /* VideoSingleFrameGenerator.swift in Sources */,
+				A931DC7A2048CD5F00FEC121 /* UIImage+IO.swift in Sources */,
+				A931DC7C2048CF3600FEC121 /* String+Files.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +405,7 @@
 		A975E5C1204893E900F18024 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RC.Graphical;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +428,7 @@
 		A975E5C2204893E900F18024 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +450,7 @@
 		A975E5C4204893E900F18024 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J546F75L53;
 				INFOPLIST_FILE = GraphicalTests/Info.plist;
@@ -390,6 +465,7 @@
 		A975E5C5204893E900F18024 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J546F75L53;
 				INFOPLIST_FILE = GraphicalTests/Info.plist;
